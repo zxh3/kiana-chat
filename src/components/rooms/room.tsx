@@ -27,9 +27,6 @@ export const Room: React.FC<{ roomId: string; token: string }> = ({
 
   useEffect(function connect() {
     roomInstance.connect(process.env.NEXT_PUBLIC_LIVEKIT_URL!, token);
-    return () => {
-      roomInstance.disconnect();
-    };
   }, []);
 
   return (
