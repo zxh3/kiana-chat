@@ -9,12 +9,12 @@ const API_SECRET = process.env.LIVEKIT_API_SECRET!;
 const roomService = new RoomServiceClient(LIVEKIT_URL, API_KEY, API_SECRET);
 
 export async function generateToken({
+  userId,
   roomId,
 }: {
   roomId: string;
   userId: string;
 }) {
-  const userId = Math.random().toString();
   const roomName = roomId;
   const accessToken = new AccessToken(API_KEY, API_SECRET, {
     identity: userId,
