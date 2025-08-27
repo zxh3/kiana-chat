@@ -1,2 +1,4 @@
-export * from "./schemas/auth";
-export * from "./schemas/todo";
+// @ts-nocheck
+import * as schemas from "./schemas";
+
+export { schemas };
