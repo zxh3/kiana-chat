@@ -9,7 +9,6 @@ import {
   RoomAudioRenderer,
   useTracks,
   RoomContext,
-  useRoomContext,
 } from "@livekit/components-react";
 import "@livekit/components-styles";
 
@@ -50,8 +49,6 @@ export const Room: React.FC<{ roomId: string; token: string }> = ({
 };
 
 function MyVideoConference() {
-  const room = useRoomContext();
-  console.log("Room state:", room.state);
   // `useTracks` returns all camera and screen share tracks. If a user
   // joins without a published camera track, a placeholder track is returned.
   const tracks = useTracks(
