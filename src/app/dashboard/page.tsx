@@ -1,3 +1,11 @@
+import Link from "next/link";
+
 export default function DashboardPage() {
-  return <div>Dashboard</div>;
+  return (
+    <div>
+      <Link href="/dashboard/rooms" className="hover:text-amber-300">
+        Rooms
+      </Link>
+    </div>
+  );
 }

@@ -27,13 +27,13 @@ export default async function RoomsPage() {
               <CardAction>
                 <Link
                   href={`/dashboard/rooms/${room.name}`}
-                  className="hover:text-amber-400"
+                  className="hover:text-amber-300"
                 >
                   Join
                 </Link>
               </CardAction>
             </CardHeader>
-            <CardContent className="text-xs text-neutral-400">
+            <CardContent className="text-xs text-neutral-300">
               <p>Room SID: {room.sid}</p>
               <p>Participants: {room.numParticipants}</p>
               <p>
