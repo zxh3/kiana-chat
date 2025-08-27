@@ -1,5 +1,5 @@
-import { SignUp } from '@clerk/nextjs'
-import { ChartLine, Clock, ShieldCheck, Sparkles } from 'lucide-react'
+import { SignUp } from "@clerk/nextjs";
+import { ChartLine, Clock, ShieldCheck, Sparkles } from "lucide-react";
 
 export default function SignUpPage() {
   return (
@@ -12,7 +12,8 @@ export default function SignUpPage() {
               <p className="font-semibold">Save on development time</p>
             </div>
             <p className="text-muted-foreground mt-2 text-sm">
-              Add authentication and user management to your app with just a few lines of code.
+              Add authentication and user management to your app with just a few
+              lines of code.
             </p>
           </li>
           <li>
@@ -30,7 +31,8 @@ export default function SignUpPage() {
               <p className="font-semibold">Protect your users</p>
             </div>
             <p className="text-muted-foreground mt-2 text-sm">
-              Enable features like two-step verification and enjoy automatic security updates.
+              Enable features like two-step verification and enjoy automatic
+              security updates.
             </p>
           </li>
           <li>
@@ -39,7 +41,8 @@ export default function SignUpPage() {
               <p className="font-semibold">Match your brand</p>
             </div>
             <p className="text-muted-foreground mt-2 text-sm">
-              Theme our pre-built components, or integrate with our easy-to-use APIs.
+              Theme our pre-built components, or integrate with our easy-to-use
+              APIs.
             </p>
           </li>
         </ul>
@@ -48,5 +51,5 @@ export default function SignUpPage() {
         <SignUp />
       </div>
     </div>
-  )
+  );
 }
