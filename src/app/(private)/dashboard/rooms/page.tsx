@@ -9,6 +9,8 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 
+export const revalidate = 0;
+
 export default async function RoomsPage() {
   const rooms = await listRooms();
   const roomsCount = rooms.length;
